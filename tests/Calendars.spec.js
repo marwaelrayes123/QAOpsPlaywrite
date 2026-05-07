@@ -13,7 +13,7 @@ test('calendar', async ({page})=>
     await page.getByText(yeary).click()
     await page.locator(".react-calendar__year-view__months__month").nth(Number(monthy)-1).click()
     await page.locator("//abbr[text()='"+datey+"']").click()
-
+// calendar check
      const inputs = page.locator('.react-date-picker__inputGroup__input')
 
      for(let i =0;i<expectedList.length;i++)
